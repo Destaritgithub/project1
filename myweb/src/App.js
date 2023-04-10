@@ -6,7 +6,7 @@ import About from './component/About.js';
 function App() {
   return (
     <div>
-      https://youtu.be/2kg0z1qNrkw 45:00
+      https://youtu.be/2kg0z1qNrkw 45:
      <Navbar/>
      {/* <Home/> */}
      <About/>

@@ -8,7 +8,10 @@ const Skills = () => {
           <p className=' text-4xl font-bold inline border-b-4 border-pink-900'>
             Experience
           </p>
-          <p> // These are the technologies i have worked with </p>
+          <p className=' text-lg'>
+            {' '}
+            These are the technologies i have worked with{' '}
+          </p>
         </div>
         <div className=' w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
           <div className=' shadow-md shadow-black hover:scale-110 duration-500'>
@@ -62,10 +65,35 @@ const Skills = () => {
           <div className=' shadow-md shadow-black hover:scale-110 duration-500'>
             <img
               className=' w-20 mx-auto'
+              src='https://w7.pngwing.com/pngs/537/866/png-transparent-flutter-hd-logo.png'
+              alt='MONGODB'
+            />
+            <p className='my-4 font-bold'>Flutter</p>
+          </div>
+          <div className=' shadow-md shadow-black hover:scale-110 duration-500'>
+            <img
+              className=' w-20 mx-auto'
               src='https://w1.pngwing.com/pngs/711/379/png-transparent-green-grass-mongodb-database-documentoriented-database-dashboard-nosql-bson-javascript.png'
               alt='MONGODB'
             />
             <p className='my-4 font-bold'>Mongo DB</p>
+          </div>
+          <div className=' shadow-md shadow-black hover:scale-110 duration-500'>
+            <img
+              className=' w-20 mx-auto'
+              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR48Xj3pOvCad36ecoinFgIrnbCpWrZWR8RvdswruGRaA&s'
+              alt='MONGODB'
+            />
+            <p className='my-4 font-bold'>Firbase </p>
+          </div>
+
+          <div className=' shadow-md shadow-black hover:scale-110 duration-500'>
+            <img
+              className=' w-20 mx-auto'
+              src='https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/tailwind-css-icon.svg'
+              alt='Tailwind'
+            />
+            <p className='my-4 font-bold'>TailWind CSS </p>
           </div>
         </div>
       </div>

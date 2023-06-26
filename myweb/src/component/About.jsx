@@ -13,17 +13,22 @@ const About = () => {
 
           <div> </div>
         </div>
-        <div className=' max-w-[1000] w-full grid sm:grid-cols-2 gap-8 px-4'>
-          <div className=' text-4xl sm:text-right font-bold'>
-            <p>Hi , i am nice to meet you </p>
-          </div>
-
+        <div className=' text-lg pl-10 pr-10 sm:pl-40 sm:pr-40'>
           <p>
-            Build a React JS Portfolio Website using React & Tailwind CSS. I
-            threw this together the other day and wanted to share it with you
-            guys. Feel free to follow along and use this as your own portfolio
-            website to get a job in tech or any other profession! Make sure you
-            have some cool projects to throw in the
+            Hey there! My name is Desta,
+            I am highly motivated and responsible full stack developer I
+            specializes in MERN Stack for web and Flutter for mobile app
+            development. I graduated from Bair Dar University with a degree in
+            computer science and has been dedicated to honing my skills and
+            staying up-to-date with the latest trends in the industry. As a
+            developer, I am committed to delivering high-quality work and
+            exceeding client expectations. I takes pride in my ability to work
+            efficiently under pressure while maintaining a keen eye for detail.
+            My passion for technology and problem-solving has made me a
+            valuable asset to any project I takes on. i expertise in full
+            stack development makes me a versatile and valuable member of any
+            team, whether I am building robust web applications or creating
+            seamless mobile experiences.
           </p>
         </div>
       </div>

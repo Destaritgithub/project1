@@ -9,13 +9,15 @@ import EmailIcon from '@mui/icons-material/Email';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import { Link } from 'react-scroll';
 import profile from '../assets/profile.jpg';
+import myresume from '../assets/myresume.docx';
+
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
   const handlechange = () => setnav(!nav);
 
   return (
-    <div className=' fixed w-full flex justify-between items-center px-4 bg-slate-600 text-gray-950'>
+    <div className=' fixed w-full flex justify-between items-center px-4 bg-slate-600 text-gray-50'>
       <div>
         <Stack direction='row' spacing={2}>
           <Avatar alt='p' src={profile} />
@@ -116,9 +118,8 @@ const Navbar = () => {
             <a
               className='flex justify-between items-center w-f
    text-gray-300'
-              href='/'
+              href='https://linkedin.com/in/desta-alemu-6b4120234'
             >
-              {' '}
               linkid in
               <LinkedInIcon fontSize='large' />
             </a>
@@ -127,7 +128,7 @@ const Navbar = () => {
             <a
               className='flex justify-between items-center w-f
    text-gray-300'
-              href='/'
+              href='https://github.com/Destaritgithub'
             >
               {' '}
               GitHub
@@ -139,7 +140,7 @@ const Navbar = () => {
             <a
               className='flex justify-between items-center w-f
    text-gray-300'
-              href='/'
+              href='https://alexdesse0@gmail.com'
             >
               {' '}
               email
@@ -150,9 +151,9 @@ const Navbar = () => {
             <a
               className='flex justify-between items-center w-f
    text-gray-300'
-              href='/'
+              href={myresume}
+              download={myresume}
             >
-              {' '}
               resume
               <PictureAsPdfIcon fontSize='large' />
             </a>

@@ -25,8 +25,8 @@ const Home = () => {
                 </button>
               </a>
               <button className=' group text-white border-2 my-2 flex items-center hover:bg-black first-letter:hover:border-green-600 '>
-                <Link to='work' smooth={true} duration={500}>
-                  view work
+                <Link to='contact' smooth={true} duration={500}>
+                  Contact Me
                 </Link>
                 <span className=' group-hover:rotate-90 duration-300'>
                   <ArrowForwardIcon className=' ml-3' />

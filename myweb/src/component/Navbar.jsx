@@ -8,6 +8,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import { Link } from 'react-scroll';
+import profile from '../assets/profile.jpg';
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
@@ -17,10 +18,7 @@ const Navbar = () => {
     <div className=' fixed w-full flex justify-between items-center px-4 bg-slate-600 text-gray-950'>
       <div>
         <Stack direction='row' spacing={2}>
-          <Avatar
-            alt='p'
-            src='https://imgv3.fotor.com/images/blog-richtext-image/10-profile-picture-ideas-to-make-you-stand-out.jpg'
-          />
+          <Avatar alt='p' src={profile} />
         </Stack>
       </div>
       {/* menu */}

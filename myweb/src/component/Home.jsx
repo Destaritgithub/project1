@@ -1,26 +1,44 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-scroll';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import profile from '../assets/profile3.jpeg';
+import CV from '../assets/CV.pdf';
 
 const Home = () => {
   return (
-    <div name='home' className='  bg-slate-600 w-full h-screen'>
-      <div className=' max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-      <p className=' text-pink-200'>Hi my name is</p>
-      <h1 className=' text-4xl sm:text-7xl font-bold text-gray-50'> My name</h1>
-      <h2 className=' text-4xl sm:7xl font-bold '>I'm a full stack developer </h2>
-      <p className=' py-4 max-w-[700px]'> i am a full stack developer  specializing in building responsive full-stack web application </p>
-      <div>
-     <button className=' group text-white border-2 my-2 flex items-center hover:bg-green-400 hover:border-green-600 '>
-        view work
-        <span className=' group-hover:rotate-90 duration-300'>
-            <ArrowForwardIcon className=' ml-3'/></span>
-     </button>
+    <div name='home' className='  bg-slate-600 w-full h-screen flex'>
+      <div className=' grid sm:flex sm:pl-20 md:pl-80 gap-6 pt-60 justify-start pl-20'>
+        <div className='flex justify-start '>
+          <div className=''>
+            <p className=' text-pink-200'>Hello, I am</p>
+            <h1 className=' text-2xl sm:text-4xl font-bold text-gray-50'>
+              DESTA ALEMU
+            </h1>
+            <h2 className=' text-1xl sm:4xl font-bold text-pink-200 '>
+              Full stack developer
+            </h2>
 
-      </div>
-
+            <div className='flex gap-6'>
+              <a href={CV} download>
+                <button className=' group text-white border-2 my-2 flex items-center hover:bg-black hover:border-green-600 '>
+                  Download CV
+                </button>
+              </a>
+              <button className=' group text-white border-2 my-2 flex items-center hover:bg-black first-letter:hover:border-green-600 '>
+                <Link to='work' smooth={true} duration={500}>
+                  view work
+                </Link>
+                <span className=' group-hover:rotate-90 duration-300'>
+                  <ArrowForwardIcon className=' ml-3' />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <img src={profile} alt='profile' className='w-60 h-60 mx-auto' />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
